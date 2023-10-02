@@ -1,0 +1,65 @@
+* {
+    transition: all .3s;
+}
+
+
+.capitulo-inicial, 
+.capitulo-inicial * {
+    text-align: center;
+
+}
+
+.image {
+    justify-content: center;
+    display: flex;
+}
+
+#conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+#conteudo img {
+    max-height: 30vh;
+}
+
+.modoClaro {
+    background: #f1f1f1;
+}
+
+.modoClaro p,
+.modoClaro h1,
+.modoClaro h2 {
+    color: #333333;
+}
+
+.modoEscuro{
+    background: #333333;
+}
+
+.modoEscuro p,
+.modoEscuro h1, 
+.modoEscuro h2 {
+    color: #f1f1f1;
+}
+
+footer{
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    padding: 1% 0 0;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+.modoClaro footer p{
+    color: #f1f1f1;
+}

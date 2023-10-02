@@ -1,0 +1,128 @@
+/* styles/globals.css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --var-white: #F1f1f1;
+  --var-black: #1b1b20;
+  --var-dark-black:#21333C;
+}
+
+html,
+body {
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+  background: var(--var-black);
+  color: var(--var-white);
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  background: var(--var-black);
+  width: 100%;
+  justify-content: space-around;
+  min-height: 5vh;
+  display: flex;
+  color: var(--var-white);
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.BookPage {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BookPage .container {
+  flex-direction: column;
+}
+
+.BookPage .container p {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 2vh auto;
+  max-width: 80vw;
+  font-family: opensans, helvetica, arial, sans-serif;
+  font-size: 1.325rem;
+  margin-bottom: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -.00125rem;
+  overflow-wrap: break-word;
+  color: var(--var-white);
+}
+
+.button-container {
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.normal,
+.highContrast {
+  display: flex;
+  flex-direction: column;
+  background: url('../pages/images/DarkBG.jpg');
+}
+
+.normal {
+  background-color: var(--var-white);
+  color: var(--var-black);
+}
+
+.highContrast {
+  background-color: var(--var-black);
+  color: var(--var-white);
+}
+
+
+button {
+  background-color: var( --var-dark-black);
+  text-transform: uppercase;
+  position: relative;
+  font-size: 18px;
+  outline: none;
+  margin: 0 10px;
+  padding: 2em;
+  color:var(--var-white);
+  border-radius: 6px;
+  border:  1px solid var(--var-white);
+  transition: .3s all;
+  cursor: pointer;
+}
+
+button:hover {
+  padding: 1.8em;
+  background-color: #333333;
+}
+
+button:active {
+  transform: translateY(3px);
+}
